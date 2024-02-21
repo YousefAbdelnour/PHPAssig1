@@ -9,12 +9,6 @@ class App
         $url = $_GET['url'];
 
         $routes = [
-            'Person/register' => 'Person,register',
-            'Person/complete_registration' => 'Person,complete_registration',
-            'Person/' => 'Person,list',
-            'Person/delete' => 'Person,delete',
-            'Person/edit/{id}' => 'Person,edit',
-            'Person/update' => 'Person,update'
         ];
 
         foreach ($routes as $routeUrl => $controllerMethod) {
