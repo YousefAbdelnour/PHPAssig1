@@ -9,7 +9,7 @@ class App
         $url = $_GET['url'];
 
         $routes = [
-            'Count/index' => 'Count,index'
+            'Count/index' => 'Count,index', 'Contact/index' => 'Contact,index'
         ];
 
         foreach ($routes as $routeUrl => $controllerMethod) {
