@@ -27,11 +27,10 @@ class Counter
 
     public function write()
     {
-        $count = json_encode(['count' => $this->count]);
         $filename = 'resources/counter.txt';
         $filehandle = fopen($filename, 'w');
         flock($filehandle, LOCK_EX);
-        fwrite($filehandle, $count);
+        fwrite($filehandle, $this);
         flock($filehandle, LOCK_UN);
         fclose($filehandle);
     }

@@ -8,4 +8,8 @@ class Contact extends \app\core\Controller
     {
         parent::view('Contact/index');
     }
+    function read()
+    {
+        parent::view('Contact/read');
+    }
 }
