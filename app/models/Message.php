@@ -4,15 +4,21 @@ namespace app\models;
 
 class Message
 {
-    public $name;
     public $email;
+    public $msg;
     public $IP;
 
-    public function read()
+    public static function read()
     {
         $filename = 'resources/messages.txt';
         if (file_exists($filename)) {
-            return file($filename);
+            $records = file($filename);
+            foreach ($records as $key => $value) {
+                $object = json_decode($value);
+                $message = new \app\models\Message($object);
+                $record[$key] = $message;
+            }
+            return $records;
         } else {
             return [];
         }

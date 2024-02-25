@@ -14,6 +14,7 @@ class App
             'Contact/read' => 'Contact,read',
             'Main/index' => 'Main,index',
             'Main/about_us' => 'Main,about_us',
+            'Contact/retrieve'=>'Contact,retrieve',
         ];
 
         foreach ($routes as $routeUrl => $controllerMethod) {

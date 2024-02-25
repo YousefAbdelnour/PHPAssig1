@@ -26,10 +26,10 @@
     <div class="wrapper">
         <div class="menu">
             <ul>
-                <li><a href="index.php">Landing page</a></li>
-                <li><a href="about_us.php">About us</a></li>
-                <li><a href="../Contact/index.php">Contact us</a></li>
-                <li><a href="../Contact/read.php">See the messages we get</a></li>
+                <li><a href="index">Landing page</a></li>
+                <li><a href="about_us">About us</a></li>
+                <li><a href="../Contact/index">Contact us</a></li>
+                <li><a href="../Contact/read">See the messages we get</a></li>
             </ul>
         </div>
         <div class="content">
