@@ -11,7 +11,7 @@ class Contact extends \app\core\Controller
     function read()
     {
         $messages = \app\models\Message::read();
-        parent::view('Contact/read', $messages);
+        $this->view('Contact/read', $messages);
     }
     function retrieve()
     {

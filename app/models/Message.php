@@ -8,6 +8,15 @@ class Message
     public $msg;
     public $IP;
 
+    public function __construct($object = null){
+        if($object == null){
+            return;
+        }
+        $this->email = $object->email;
+        $this->msg = $object->msg;
+        $this->IP = $object->IP;
+    }
+
     public static function read()
     {
         $filename = 'resources/messages.txt';
@@ -16,9 +25,10 @@ class Message
             foreach ($records as $key => $value) {
                 $object = json_decode($value);
                 $message = new \app\models\Message($object);
-                $record[$key] = $message;
+                $records[$key] = $message;
             }
             return $records;
+            
         } else {
             return [];
         }

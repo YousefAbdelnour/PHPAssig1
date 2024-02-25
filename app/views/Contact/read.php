@@ -24,8 +24,8 @@
         <div class="content">
             <h2>Contact us - messages sent</h2>
             <?php
-            foreach ($data as $index => $messages) {
-                echo "<br><br>$messages->email<br><br>$messages->msg";
+            foreach ($data as $index => $message) {
+                echo "$message->email<br><br>$message->msg<br><br>";
             }
             ?>
         </div>

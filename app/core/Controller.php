@@ -4,7 +4,7 @@ namespace app\core;
 
 class Controller
 {
-	function view($name, $data = null)
+	function view($name, $data=null)
 	{
 		include('app/views/' . $name . '.php');
 	}
