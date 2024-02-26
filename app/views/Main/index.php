@@ -37,9 +37,11 @@
             </ul>
         </div>
         <div class="content">
+            <div id="desc">
             <h1>Landing page</h1>
             <p>Welcome to this web application.</p>
             <p>We aim to please.</p>
+            </div>
         </div>
         <div id="count">
             <p id="views"></p>
