@@ -38,9 +38,9 @@
         </div>
         <div class="content">
             <div id="desc">
-            <h1>Landing page</h1>
-            <p>Welcome to this web application.</p>
-            <p>We aim to please.</p>
+            <h1>Home</h1>
+            <p>Welcome to our web application.</p>
+            <p>Our goal is to help our client start their buisness, but at<br>the same time help people by making their life easier.<br>We plan on making a web application that provides <br>anyone with access to maids to keep their <br>buisness/homes clean.</p>
             </div>
         </div>
         <div id="count">
