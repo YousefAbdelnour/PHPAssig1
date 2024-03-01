@@ -10,23 +10,23 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/resources/styleC.css">
     <script>
-        function load() {
+        function updateVisitCount() {
             var xhr = new XMLHttpRequest();
-
             xhr.onreadystatechange = function() {
                 if (xhr.readyState == 4 && xhr.status == 200) {
                     var responseObject = JSON.parse(xhr.responseText);
                     document.getElementById("views").innerHTML = responseObject.count + " page visits";
                 }
             };
-            xhr.open("GET", "../../../resources/counter.txt", true);
+            xhr.open("GET", "Counter.php", true);
             xhr.send();
         }
+        window.onload = updateVisitCount;
     </script>
-    <title>Assignment 1</title>
+    <title>Landing page</title>
 </head>
 
-<body onload="load()">
+<body onload="load()" id="index">
     <div class="wrapper">
         <div class="menu">
             <ul>
@@ -38,14 +38,12 @@
         </div>
         <div class="content">
             <div id="desc">
-            <h1>Home</h1>
-            <p>Welcome to our web application.</p>
-            <p>Our goal is to help our client start their buisness, but at<br>the same time help people by making their life easier.<br>We plan on making a web application that provides <br>anyone with access to maids to keep their <br>buisness/homes clean.</p>
+                <h1>Home</h1>
+                <p>Welcome to our web application.</p>
+                <p>Our goal is to help our client start their buisness, but at<br>the same time help people by making their life easier.<br>We plan on making a web application that provides <br>anyone with access to maids to keep their <br>buisness/homes clean.</p>
             </div>
         </div>
-        <div id="count">
-            <p id="views"></p>
-        </div>
+        <div id="views"></div>
     </div>
 </body>
 

@@ -9,12 +9,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/resources/styleC.css">
-    <title>Document</title>
+    <title>About Us</title>
 </head>
 
-<body>
+<body id="aboutUs">
     <div class="wrapper">
-        <H1>About us in main</H1>
         <div class="menu">
             <ul>
                 <li><a href="index">Landing page</a></li>
@@ -23,10 +22,19 @@
                 <li><a href="../Contact/read">See the messages we get</a></li>
             </ul>
         </div>
-        <div>
-            <h2>About us</h2>
-            <p>See our incredible team of devs.</p>
-            <p>image 1 <br> image 2</p>
+        <div class="cont">
+            <div class="descrip">
+                <h2>About us</h2>
+                <p>See our incredible team of devs.</p>
+            </div>
+            <div id="Cristian">
+                <img src="/resources/CristianGasper.jpg" alt="Cristian Gasper" class="proImg">
+                <p class="personDesc">This is Cristian, he takes care of the designs of the website and back end programming</p>
+            </div>
+            <div id="Youssef">
+                <img src="/resources/YoussefAbdelnour.jpg" alt="Cristian Gasper" class="proImg" style="width: 300px; height: 450px">
+                <p class="personDesc">This is Youssef, he takes care of most of the back end programming</p>
+            </div>
         </div>
     </div>
 </body>

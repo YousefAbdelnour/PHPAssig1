@@ -1,4 +1,4 @@
-body {
+#index {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,6 +6,13 @@ body {
     width: 100vw;
     height: 170vh;
 
+}
+
+#aboutUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
 }
 
 .wrapper {
@@ -35,9 +42,29 @@ body {
 
 }
 
-#count{
-	color: #ffffff;
+.descrip{
+    text-align: center;
+    color: #ffffff;
 }
+
+.proImg{
+    float: left;
+    margin: 3%;
+    margin-right: 8%;
+    border: 8px solid #451b5e;
+    border-radius: 10%;
+
+}
+
+.personDesc{
+    color: #ffffff;
+    margin-top: 20%;
+}
+
+#count {
+    color: #ffffff;
+}
+
 #desc {
     margin-top: 54%;
     left: 50%;
@@ -103,7 +130,9 @@ ul li a:hover {
 }
 
 @keyframes floatUpDown {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translate(-50%, -50%) translateY(0);
     }
 
@@ -122,31 +151,36 @@ ul li a:hover {
 
 
 @media screen and (max-width: 768px) {
-	body{
-		height: 100vh;
-	}
+    body {
+        height: 100vh;
+    }
+
     .content {
         background-size: 100% auto;
     }
-	#desc{
-		margin-top: 65%;
-		height: 32%;
-	}
-	.menu{
-		margin-bottom: 22%;
-	}
-	ul li {
-    display: block;
-	margin: 15px;
-	}
-	ul li a {
-	text-align: center;
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 150%;
-    padding: 0.5%;
-    margin: 8px;
-	animation: rotateBorder 7s ease-out infinite;
-	}
+
+    #desc {
+        margin-top: 65%;
+        height: 32%;
+    }
+
+    .menu {
+        margin-bottom: 22%;
+    }
+
+    ul li {
+        display: block;
+        margin: 15px;
+    }
+
+    ul li a {
+        text-align: center;
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 150%;
+        padding: 0.5%;
+        margin: 8px;
+        animation: rotateBorder 7s ease-out infinite;
+    }
 }

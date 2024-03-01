@@ -40,3 +40,9 @@ class Counter
         return json_encode($this);
     }
 }
+
+$counter = new Counter();
+$counter->increment();
+$counter->write();
+header('Content-Type: application/json');
+echo json_encode(['count' => $counter->count]);
