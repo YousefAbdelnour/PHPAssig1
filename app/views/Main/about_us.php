@@ -9,10 +9,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/resources/styleC.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Permanent+Marker&display=swap" rel="stylesheet">
     <title>About Us</title>
 </head>
 
-<body id="aboutUs">
+<body id="read">
     <div class="wrapper">
         <div class="menu">
             <ul>
@@ -32,7 +35,7 @@
                 <p class="personDesc">This is Cristian, he takes care of the designs of the website and back end programming</p>
             </div>
             <div id="Youssef">
-                <img src="/resources/YoussefAbdelnour.jpg" alt="Cristian Gasper" class="proImg" style="width: 300px; height: 450px">
+                <img src="/resources/YoussefAbdelnour.jpg" alt="Cristian Gasper" class="proImg">
                 <p class="personDesc">This is Youssef, he takes care of most of the back end programming</p>
             </div>
         </div>

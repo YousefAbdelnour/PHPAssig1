@@ -8,10 +8,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/resources/styleC.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Contact Us</title>
 </head>
 
-<body>
+<body id="index">
     <div class="wrapper">
         <div class="menu">
             <ul>
@@ -22,17 +25,18 @@
             </ul>
         </div>
         <div class="content">
-            <h2>Contact Us</h2>
-            <p>Wanna reach us? Write your email information and message in the following and then submit.</p>
-            <form method="post" action="/Contact/retrieve">
-                <label>Email: </label>
-                <input name="email" type="text" style="width: 500px;">
-                <br><br>
-                <label>Message: </label>
-                <textarea name="message" style="width: 500px; height: 100px;"></textarea>
-                <br><br>
-                <input type="submit" value="Send" style="width: 550px; height: 70px;">
-            </form>
+
+            <div class="formContainer">
+                <h2>Contact Us</h2>
+                <p>Wanna reach us? Write your email information and message in the following and then submit.</p>
+                <form method="post" action="/Contact/retrieve">
+                    <input name="email" type="text" placeholder="Email">
+                    <br><br>
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <br><br>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
         </div>
     </div>
 </body>

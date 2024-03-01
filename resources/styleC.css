@@ -5,14 +5,88 @@
     background-color: black;
     width: 100vw;
     height: 170vh;
+    font-family: Orbitron;
 
 }
 
-#aboutUs {
+#read {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(0, 0, 0);
+    font-family: Orbitron;
+}
+
+.displayedMess {
+    margin-top: 5%;
     background-color: black;
+    color: #ffffff;
+    text-align: center;
+}
+
+.formContainer {
+    position: absolute;
+    background-color: black;
+    border: 4px solid white;
+    color: #ffffff;
+    padding: 6%;
+    border-radius: 4%;
+    width: 50%;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: floatUpDown 10s infinite;
+
+}
+
+.mssDis {
+    background-color: rgb(49, 49, 49);
+    border: 4px solid rgb(166, 0, 255);
+    border-radius: 4%;
+    margin-bottom: 8%;
+    padding: 2%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.mssDis:hover {
+    transform: scale(1.3);
+}
+
+form {
+    margin: 1%;
+    padding: 2%;
+}
+
+form input,
+form textarea {
+    border: 4px solid rgb(255, 247, 247);
+    border-radius: 2%;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(162, 157, 157);
+    outline: none;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: black;
+}
+
+input[type=submit] {
+    border: none;
+    border-radius: 20%;
+    width: 20%;
+    background-color: rgb(135, 3, 161);
+    transition: transform 0.3s ease-in-out;
+}
+
+input[type=submit]:hover {
+    transform: scale(1.3);
+}
+
+input[type=text]:focus,
+textarea:focus {
+    border-color: aqua;
 }
 
 .wrapper {
@@ -22,6 +96,7 @@
     height: 100%;
     width: 100%;
     flex-direction: column;
+    background-color: black;
 }
 
 .menu {
@@ -30,6 +105,43 @@
     padding: 1%;
     width: 100%;
     height: 6%;
+}
+
+#Cristian,
+#Youssef {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    column-gap: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 2%;
+    margin: 5%;
+    padding: 2%;
+    animation: float 10s infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(10px);
+    }
+
+    50% {
+        transform: translateX(-10px);
+    }
+
+    75% {
+        transform: translateX(10px);
+    }
+}
+
+.personDesc {
+    margin-left: 20px;
 }
 
 .content {
@@ -42,23 +154,28 @@
 
 }
 
-.descrip{
+.descrip {
     text-align: center;
     color: #ffffff;
 }
 
-.proImg{
-    float: left;
+.proImg {
     margin: 3%;
     margin-right: 8%;
     border: 8px solid #451b5e;
     border-radius: 10%;
+    object-fit: cover;
+    width: 300px;
+    height: 450px;
 
 }
 
-.personDesc{
+.proImg:hover {
+    border-color: aqua;
+}
+
+.personDesc {
     color: #ffffff;
-    margin-top: 20%;
 }
 
 #count {
